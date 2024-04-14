@@ -12,7 +12,7 @@
  </div>   
 
 ## 📒Introduction
-Awesome-LLM-Inference: A curated list of [📙Awesome LLM Inference Papers with Codes](#paperlist), please check [📖Contents](#paperlist) for more details. This repo is still updated frequently ~ 👨‍💻‍ Welcome to star ⭐️ & submit a PR to this repo!
+Awesome-LLM-Inference: A curated list of [📙Awesome LLM Inference Papers with Codes](#paperlist), check [📖Contents](#paperlist) for more details. This repo is still updated frequently ~ 👨‍💻‍ Welcome to star ⭐️ or submit a PR to this repo!
 
 ## ©️Citations 
 
@@ -42,7 +42,7 @@ Awesome-LLM-Inference: A curated list of [📙Awesome LLM Inference Papers with 
 * 📖[Parallel Decoding/Sampling](#Parallel-Decoding-Sampling)🔥
 * 📖[Structured Prune/KD/Weight Sparse](#Structured_Pruning_KD_Weight_Sparse)
 * 📖[Mixture-of-Experts(MoE) LLM Inference](#Mixture_of_Experts_LLM_Inference)🔥
-* 📖[CPU/Single GPU/Mobile Inference](#CPU-Single-GPU-Inference)
+* 📖[CPU/Single GPU/FPGA/Mobile Inference](#CPU-Single-GPU-Inference)
 * 📖[Non Transformer Architecture](#Non-Transformer-Architecture)🔥
 * 📖[GEMM/Tensor Cores/WMMA/Parallel](#GEMM-Tensor-Cores-WMMA)  
 * 📖[Position Embed/Others](#Others)
@@ -101,7 +101,7 @@ Awesome-LLM-Inference: A curated list of [📙Awesome LLM Inference Papers with 
 |Date|Title|Paper|Code|Recom|
 |:---:|:---:|:---:|:---:|:---:| 
 |2022.06|🔥[**ZeroQuant**] Efficient and Affordable Post-Training Quantization for Large-Scale Transformers(@Microsoft) |[[pdf]](https://arxiv.org/pdf/2206.01861.pdf)|[[DeepSpeed]](https://github.com/microsoft/DeepSpeed) ![](https://img.shields.io/github/stars/microsoft/DeepSpeed.svg?style=social)|⭐️⭐️ |     
-|2022.08|[FP8-Quantization] FP8 Quantization: The Power of the Exponent(@Qualcomm AI Research) | [[pdf]](https://arxiv.org/pdf/2208.09225.pdf) | ⚠️ |⭐️ |    
+|2022.08|[FP8-Quantization] FP8 Quantization: The Power of the Exponent(@Qualcomm AI Research) | [[pdf]](https://arxiv.org/pdf/2208.09225.pdf) | [[FP8-quantization]](https://github.com/Qualcomm-AI-research/FP8-quantization) ![](https://img.shields.io/github/stars/Qualcomm-AI-research/FP8-quantization.svg?style=social) |⭐️ |    
 |2022.08|[LLM.int8()] 8-bit Matrix Multiplication  for Transformers at Scale(@Facebook AI Research etc) |[[pdf]](https://arxiv.org/pdf/2208.07339.pdf)|[[bitsandbytes]](https://github.com/timdettmers/bitsandbytes) ![](https://img.shields.io/github/stars/timdettmers/bitsandbytes.svg?style=social)|⭐️ |    
 |2022.10|🔥[**GPTQ**] GPTQ: ACCURATE POST-TRAINING QUANTIZATION FOR GENERATIVE PRE-TRAINED TRANSFORMERS(@IST Austria etc) |[[pdf]](https://arxiv.org/pdf/2210.17323.pdf) |[[gptq]](https://github.com/IST-DASLab/gptq) ![](https://img.shields.io/github/stars/IST-DASLab/gptq.svg?style=social)|⭐️⭐️ |   
 |2022.11|🔥[**WINT8/4**] Who Says Elephants Can’t Run: Bringing Large Scale MoE Models into Cloud Scale Production(@NVIDIA&Microsoft) |[[pdf]](https://arxiv.org/pdf/2211.10017.pdf)|[[FasterTransformer]](https://github.com/NVIDIA/FasterTransformer) ![](https://img.shields.io/github/stars/NVIDIA/FasterTransformer.svg?style=social)|⭐️⭐️ |     
@@ -146,6 +146,7 @@ Awesome-LLM-Inference: A curated list of [📙Awesome LLM Inference Papers with 
 |2023.12|[SCCA] SCCA: Shifted Cross Chunk Attention for long contextual semantic expansion(@Beihang University)| [[pdf]](https://arxiv.org/pdf/2312.07305.pdf) | ⚠️ |⭐️ |  
 |2023.12|🔥[**FlashLLM**] LLM in a flash: Efficient Large Language Model Inference with Limited Memory(@Apple)| [[pdf]](https://arxiv.org/pdf/2312.11514.pdf) | ⚠️ |⭐️⭐️ |  
 |2024.03|🔥🔥[CHAI] CHAI: Clustered Head Attention for Efficient LLM Inference(@cs.wisc.edu etc)| [[pdf]](https://arxiv.org/pdf/2403.08058.pdf) | ⚠️ |⭐️⭐️ |  
+|2024.04| [Flash Tree Attention] DEFT: FLASH TREE-ATTENTION WITH IO-AWARENESS FOR EFFICIENT TREE-SEARCH-BASED LLM INFERENCE(@Westlake University etc)| [[pdf]](https://arxiv.org/pdf/2404.00242.pdf) | ⚠️ |⭐️⭐️ |  
 
 ### 📖KV Cache Scheduling/Quantize/Dropping ([©️back👆🏻](#paperlist))    
 <div id="KV-Cache-Scheduling-Quantize-Dropping"></div>  
@@ -164,6 +165,7 @@ Awesome-LLM-Inference: A curated list of [📙Awesome LLM Inference Papers with 
 |2023.10|🔥[**Adaptive KV Cache Compress**] MODEL TELLS YOU WHAT TO DISCARD: ADAPTIVE KV CACHE COMPRESSION FOR LLMS(@illinois.edu&microsoft)|[[pdf]](https://arxiv.org/pdf/2310.01801.pdf)|⚠️|⭐️⭐️ |  
 |2023.10|[CacheGen] CacheGen: Fast Context Loading for Language Model Applications(@Chicago University&Microsoft)|[[pdf]](https://arxiv.org/pdf/2310.07240.pdf)|⚠️|⭐️ |  
 |2023.12|[KV-Cache Optimizations] Leveraging Speculative Sampling and KV-Cache Optimizations Together for Generative AI using OpenVINO(@Haim Barad etc) | [[pdf]](https://arxiv.org/pdf/2311.04951.pdf)|⚠️|⭐️ |    
+|2023.12|[KV Cache Compress with LoRA] Compressed Context Memory for Online Language Model Interaction (@SNU & NAVER AI) | [[pdf]](https://arxiv.org/pdf/2312.03414.pdf)|[[Compressed-Context-Memory]](https://github.com/snu-mllab/Context-Memory) ![](https://img.shields.io/github/stars/snu-mllab/Context-Memory.svg?style=social) |⭐️⭐️ |    
 |2024.01|🔥🔥[**DistKV-LLM**] Infinite-LLM: Efficient LLM Service for Long Context with DistAttention and Distributed KVCache(@Alibaba etc)|[[pdf]](https://arxiv.org/pdf/2401.02669.pdf)|⚠️|⭐️⭐️ |
 |2024.02|🔥🔥[Prompt Caching] Efficient Prompt Caching via Embedding Similarity(@UC Berkeley)|[[pdf]](https://arxiv.org/pdf/2402.01173.pdf)|⚠️|⭐️⭐️ |  
 |2024.02|🔥🔥[Less] Get More with LESS: Synthesizing Recurrence with KV Cache Compression for Efficient LLM Inference(@CMU etc)|[[pdf]](https://arxiv.org/pdf/2402.09398.pdf)|⚠️|⭐️ |  
@@ -171,6 +173,9 @@ Awesome-LLM-Inference: A curated list of [📙Awesome LLM Inference Papers with 
 |2024.03|🔥[QAQ] QAQ: Quality Adaptive Quantization for LLM KV Cache(@@smail.nju.edu.cn)|[[pdf]](https://arxiv.org/pdf/2403.04643.pdf)|[[QAQ-KVCacheQuantization]](https://github.com/ClubieDong/QAQ-KVCacheQuantization) ![](https://img.shields.io/github/stars/ClubieDong/QAQ-KVCacheQuantization.svg?style=social) |⭐️⭐️ |   
 |2024.03|🔥🔥[DMC] Dynamic Memory Compression: Retrofitting LLMs for Accelerated Inference(@NVIDIA etc)|[[pdf]](https://arxiv.org/pdf/2403.09636.pdf)|⚠️|⭐️⭐️ |  
 |2024.03|🔥🔥[Keyformer] Keyformer: KV Cache reduction through key tokens selection for Efficient Generative Inference(@ece.ubc.ca etc)|[[pdf]](https://arxiv.org/pdf/2403.09054.pdf)|⚠️|⭐️⭐️ | 
+|2024.03|[FASTDECODE] FASTDECODE: High-Throughput GPU-Efficient LLM Serving using Heterogeneous(@Tsinghua University)|[[pdf]](https://arxiv.org/pdf/2403.11421.pdf)|⚠️|⭐️⭐️ | 
+|2024.03|[Sparsity-Aware KV Caching] ALISA: Accelerating Large Language Model Inference via Sparsity-Aware KV Caching(@ucf.edu)|[[pdf]](https://arxiv.org/pdf/2403.17312.pdf)|⚠️|⭐️⭐️ | 
+|2024.04|[SqueezeAttention] SQUEEZEATTENTION: 2D Management of KV-Cache in LLM Inference via Layer-wise Optimal Budget(@lzu.edu.cn etc)|[[pdf]](https://arxiv.org/pdf/2404.04793.pdf)|[[SqueezeAttention]](https://github.com/hetailang/SqueezeAttention) ![](https://img.shields.io/github/stars/hetailang/SqueezeAttention.svg?style=social) |⭐️⭐️ |   
 
 ### 📖Prompt/Context Compression ([©️back👆🏻](#paperlist))    
 <div id="Context-Compression"></div>  
@@ -243,8 +248,9 @@ Awesome-LLM-Inference: A curated list of [📙Awesome LLM Inference Papers with 
 |2022.11|🔥[**WINT8/4**] Who Says Elephants Can’t Run: Bringing Large Scale MoE Models into Cloud Scale Production(@NVIDIA&Microsoft) |[[pdf]](https://arxiv.org/pdf/2211.10017.pdf)|[[FasterTransformer]](https://github.com/NVIDIA/FasterTransformer) ![](https://img.shields.io/github/stars/NVIDIA/FasterTransformer.svg?style=social)|⭐️⭐️ |     
 |2023.12|🔥 [**Mixtral Offloading**] Fast Inference of Mixture-of-Experts Language Models with Offloading(@Moscow Institute of Physics and Technology etc)| [[pdf]](https://arxiv.org/pdf/2312.17238.pdf)| [[mixtral-offloading]](https://github.com/dvmazur/mixtral-offloading) ![](https://img.shields.io/github/stars/dvmazur/mixtral-offloading.svg?style=social)|⭐️⭐️ |
 |2024.01| [MoE-Mamba] MoE-Mamba: Efficient Selective State Space Models with Mixture of Experts(@uw.edu.pl) |  [[pdf]](https://arxiv.org/pdf/2401.04081.pdf)| ⚠️ |⭐️|   
+|2024.04| [MoE Inference] Toward Inference-optimal Mixture-of-Expert Large Language Models(@UC San Diego etc)| [[pdf]](https://arxiv.org/pdf/2404.02852.pdf)| ⚠️ |⭐️|   
 
-### 📖CPU/Single GPU/Mobile Inference ([©️back👆🏻](#paperlist))  
+### 📖CPU/Single GPU/FPGA/Mobile Inference ([©️back👆🏻](#paperlist))  
 <div id="CPU-Single-GPU-Inference"></div>  
 
 |Date|Title|Paper|Code|Recom|
@@ -253,6 +259,8 @@ Awesome-LLM-Inference: A curated list of [📙Awesome LLM Inference Papers with 
 |2023.11|[LLM CPU Inference] Efficient LLM Inference on CPUs(@intel)|[[pdf]](https://arxiv.org/pdf/2311.00502.pdf)| [[intel-extension-for-transformers]](https://github.com/intel/intel-extension-for-transformers) ![](https://img.shields.io/github/stars/intel/intel-extension-for-transformers.svg?style=social) |⭐️ |     
 |2023.12|[LinguaLinked] LinguaLinked: A Distributed Large Language Model Inference System for Mobile Devices(@University of California Irvine)|[[pdf]](https://arxiv.org/pdf/2312.00388.pdf)|⚠️ |⭐️ | 
 |2023.12|[OpenVINO] Leveraging Speculative Sampling and KV-Cache Optimizations Together for Generative AI using OpenVINO(@Haim Barad etc) | [[pdf]](https://arxiv.org/pdf/2311.04951.pdf)|⚠️|⭐️ | 
+|2024.03|[FlightLLM] FlightLLM: Efficient Large Language Model Inference with a Complete Mapping Flow on FPGAs(@Infinigence-AI) | [[pdf]](https://arxiv.org/pdf/2401.03868.pdf)|⚠️|⭐️ | 
+|2024.03|[Transformer-Lite] Transformer-Lite: High-efficiency Deployment of Large Language Models on Mobile Phone GPUs(@OPPO) | [[pdf]](https://arxiv.org/ftp/arxiv/papers/2403/2403.20041.pdf)|⚠️|⭐️ | 
 
 ### 📖Non Transformer Architecture ([©️back👆🏻](#paperlist))    
 <div id="Non-Transformer-Architecture"></div>  
